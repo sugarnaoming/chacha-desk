@@ -31,10 +31,12 @@
 
 <script>
   import SystemInformation from './LandingPage/SystemInformation'
+  import RssList from './LandingPage/RssList'
+  import ArticleList from './LandingPage/ArticleList'
 
   export default {
     name: 'landing-page',
-    components: { SystemInformation },
+    components: { SystemInformation, RssList, ArticleList },
     methods: {
       open (link) {
         this.$electron.shell.openExternal(link)
